@@ -1,34 +1,58 @@
+:root {
+    --dark-blue: #0F2040;
+    --primary-gold: #CFA130;
+    --light-gold: #FFD700;
+}
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
+
 header {
-    background-color: #0B1C2C;
+    background-color: var(--dark-blue);
     color: white;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
 }
-header img {
-    height: 50px;
+
+.banner-header-container {
+    width: 100%;
+    text-align: center;
 }
-nav a {
-    color: #CFA130;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav a:hover {
-    text-decoration: underline;
-}
+
 .banner {
     width: 100%;
     height: auto;
+    display: block;
 }
+
+nav {
+    width: 100%;
+    background-color: #0F2040;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-gold);
+    text-decoration: underline;
+}
+
 .container {
     max-width: 1000px;
     margin: 40px auto;
@@ -37,35 +61,48 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 h1, h2 {
-    color: #0B1C2C;
+    color: var(--dark-blue);
 }
-button {
-    background-color: #CFA130;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #a87f24;
-}
+
 footer {
-    background-color: #0B1C2C;
-    color: white;
-    padding: 20px;
+    background-color: var(--dark-blue);
+    color: var(--primary-gold);
     text-align: center;
-    position: fixed;
+    padding: 20px 0;
     bottom: 0;
-    left: 0;
     width: 100%;
 }
-footer a {
-    color: #CFA130;
-    margin: 0 10px;
-    text-decoration: none;
+
+.footer-slogan {
+    color: white;
+    margin-bottom: 5px;
 }
+
+.footer-contact {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: var(--primary-gold);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a {
+    color: var(--primary-gold);
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
 footer a:hover {
+    color: var(--light-gold);
     text-decoration: underline;
+}
+
+.footer-copyright {
+    margin-top: 5px;
 }
