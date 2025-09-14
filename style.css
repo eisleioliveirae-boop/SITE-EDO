@@ -1,20 +1,4 @@
 /* =============================
-   ESTILOS GERAIS
-============================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-body {
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* =============================
    CABEÇALHO E MENU
 ============================= */
 header {
@@ -24,16 +8,25 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;       /* FIXA NO TOPO */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header img {
-  max-height: 60px;
+  max-height: 50px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
+}
+
+nav ul li {
+  display: inline;
 }
 
 nav ul li a {
@@ -44,139 +37,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #d4af7a; /* dourado rose */
+  color: #d4af7a;
 }
 
-/* =============================
-   SEÇÕES
-============================= */
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section h1,
-section h2 {
-  color: #232342;
-  margin-bottom: 20px;
-}
-
-section p {
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-/* =============================
-   QUEM SOMOS
-============================= */
-#quem-somos {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#quem-somos h1 {
-  font-size: 32px;
-  border-left: 5px solid #d4af7a;
-  padding-left: 10px;
-}
-
-/* =============================
-   ÁREAS DE ATUAÇÃO
-============================= */
-.area-atuacao {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.area-atuacao div {
-  background: #f5f5f5;
-  border-radius: 12px;
-  padding: 20px;
-  border-left: 5px solid #232342;
-}
-
-.area-atuacao h3 {
-  color: #232342;
-  margin-bottom: 10px;
-}
-
-/* =============================
-   FUNDADORA
-============================= */
-#fundadora {
-  text-align: center;
-}
-
-#fundadora img {
-  max-width: 220px;
-  border-radius: 50%;
-  border: 4px solid #d4af7a;
-  margin-bottom: 20px;
-}
-
-/* =============================
-   ARTIGOS
-============================= */
-#artigos {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#artigos a {
-  display: inline-block;
-  margin: 8px;
-  padding: 10px 20px;
-  background: #232342;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-#artigos a:hover {
-  background: #d4af7a;
-  color: #232342;
-}
-
-/* =============================
-   CONTATO
-============================= */
-#contato form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: auto;
-}
-
-#contato input,
-#contato textarea {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-#contato button {
-  background-color: #232342;
-  color: white;
-  border: none;
-  padding: 14px;
-  font-size: 18px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#contato button:hover {
-  background-color: #d4af7a;
-  color: #232342;
+/* Ajuste para não esconder conteúdo atrás do header fixo */
+body {
+  padding-top: 90px; /* espaço igual à altura do header */
 }
 
 /* =============================
@@ -187,7 +53,10 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  position: fixed;    /* FIXA NO FINAL */
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer a {
