@@ -1,1 +1,66 @@
-FUNDADORA_PLACEHOLDER
+<!-- fundadora.html -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundadora</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .fundadora-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      margin: 40px;
+    }
+    .fundadora-texto {
+      flex: 2;
+      text-align: left;
+      line-height: 1.6;
+    }
+    .fundadora-foto {
+      flex: 1;
+    }
+    .fundadora-foto img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* responsivo no celular: foto embaixo do texto */
+    @media (max-width: 768px) {
+      .fundadora-container {
+        flex-direction: column;
+      }
+      .fundadora-foto {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="quem-somos.html">Quem Somos</a> |
+      <a href="fundadora.html">Fundadora</a> |
+      <a href="areas.html">Áreas</a> |
+      <a href="artigos.html">Artigos</a> |
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Fundadora</h1>
+    <div class="fundadora-container">
+      <div class="fundadora-texto">
+        <p>
+          [Aqui entra o texto completo sobre a fundadora, formação, trajetória e experiência.]
+          O conteúdo ficará alinhado à esquerda para facilitar a leitura.
+        </p>
+      </div>
+      <div class="fundadora-foto">
+        <img src="assets/img/fundadora.jpg" alt="Foto da Fundadora">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
