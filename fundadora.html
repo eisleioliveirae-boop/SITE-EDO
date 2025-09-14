@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fundadora — EDO Advocacia</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+:root{--primary:#232342;--accent:#C27E68;--text:#111;--light:#ffffff;}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, "Helvetica Neue", Arial, sans-serif;color:var(--text);background:#fff}
+header{background:var(--primary);padding:14px 20px;position:sticky;top:0;z-index:50}
+.navbar{display:flex;align-items:center;gap:20px;max-width:1200px;margin:0 auto}
+.logo{height:56px}
+.menu{list-style:none;margin:0;padding:0;display:flex;gap:18px;align-items:center}
+.menu li a{color:var(--accent);text-decoration:none;font-weight:600}
+.menu li a:hover{color:var(--light)}
+.hero{padding:56px 20px;text-align:left;max-width:1200px;margin:0 auto;color:#222;background:#fff}
+h1{color:var(--primary);margin:0 0 10px 0;font-size:36px}
+p{color:#333;line-height:1.6}
+button{background:var(--accent);border:none;padding:10px 16px;border-radius:8px;color:#fff;cursor:pointer}
+.areas-container{display:flex;flex-wrap:wrap;gap:20px;max-width:1200px;margin:20px auto;padding:0 20px}
+.area{flex:1;min-width:220px;background:#fff;border:1px solid #eee;padding:18px;border-radius:8px;color:#222}
+.fundadora-container{display:flex;gap:40px;max-width:1200px;margin:40px auto;padding:0 20px;align-items:flex-start}
+.fundadora-texto{flex:2;text-align:left;color:#222;line-height:1.6}
+.fundadora-foto{flex:1}
+.fundadora-foto img{width:100%;height:auto;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+.artigo{max-width:1200px;margin:18px auto;padding:0 20px}
+form#form-contato{max-width:700px;margin:20px auto;display:flex;flex-direction:column;gap:10px;padding:0 20px}
+input,textarea{padding:10px;border-radius:8px;border:1px solid #ccc;width:100%}
+@media (max-width:768px){.fundadora-container{flex-direction:column}.menu{flex-direction:column;align-items:flex-start}.navbar{padding-bottom:8px}}
+</style>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <img src="assets/img/logo.svg" alt="Logo EDO" class="logo">
+    <ul class="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="quem-somos.html">Quem Somos</a></li>
+      <li><a href="fundadora.html">Fundadora</a></li>
+      <li><a href="areas.html">Áreas de Atuação</a></li>
+      <li><a href="artigos.html">Artigos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+
+<section class="fundadora-container">
+  <div class="fundadora-texto">
+    <h1>Fundadora</h1>
+    <p><strong>Nome:</strong> Dra. [Nome Completo]</p>
+    <p><strong>Formação:</strong> Graduação em Direito pela [Universidade], pós-graduação em [Especialidade].</p>
+    <p><strong>Experiência:</strong> Mais de X anos de atuação em Direito Empresarial, consultoria para sociedades empresariais,
+       contratos comerciais e contencioso estratégico. Reconhecida pela excelência no atendimento e pela capacidade de gerar soluções práticas.</p>
+    <p>Compromisso com a ética, confidencialidade e resultados — atuando de forma proativa para minimizar riscos e maximizar oportunidades.</p>
+  </div>
+  <div class="fundadora-foto">
+    <img src="assets/img/fundadora.svg" alt="Foto da fundadora">
+  </div>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#f3f3f3"/>
+  <g transform="translate(100,60)">
+    <circle cx="200" cy="160" r="120" fill="#ddd"/>
+    <path d="M60 420c40-80 320-80 360 0v130H60z" fill="#ddd"/>
+    <circle cx="200" cy="160" r="110" fill="#bdbdbd"/>
+    <text x="200" y="420" font-family="Arial, sans-serif" font-size="24" fill="#888" text-anchor="middle">Foto da Fundadora</text>
+  </g>
+</svg>
